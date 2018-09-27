@@ -1,0 +1,69 @@
+﻿<Window x:Class="PathfinderOmniTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PathfinderOmniTool"
+        mc:Ignorable="d"
+        Title="GameMaster Kit"
+        MinHeight="640"
+        MinWidth="800"
+        SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Margin="2"
+              Grid.Row="0"
+              Name="mainTopMenu">
+
+            <MenuItem Header="_File">
+                <MenuItem Header="New"
+                          Name="newMenuBtn"
+                          Click="newMenuBtn_Click">
+
+                </MenuItem>
+                <MenuItem Header="Open"
+                          Name="openMenuBtn"
+                          Click="openMenuBtn_Click">
+
+                </MenuItem>
+                <MenuItem Header="Save"
+                          Name="saveMenuBtn"
+                          Click="saveMenuBtn_Click">
+
+                </MenuItem>
+                <MenuItem Header="Save As"
+                          Name="saveAsMenuBtn"
+                          Click="saveAsMenuBtn_Click">
+
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <TabControl Grid.Row="1"
+                    TabStripPlacement="Right"
+                    Name="mainTabCtrl"
+                    Margin="2"
+                    >
+            
+            <TabItem Name="campaignMakerTab"
+                     Header="Campaign maker"
+                     >
+                
+            </TabItem>
+            <TabItem Name="mapMakerTab"
+                     Header="Map maker">
+                
+            </TabItem>
+            <TabItem Name="relationshipMakerTab"
+                     Header="Relationships">
+                
+            </TabItem>
+            
+        </TabControl>
+
+    </Grid>
+</Window>
